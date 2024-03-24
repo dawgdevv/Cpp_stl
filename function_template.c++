@@ -41,7 +41,7 @@ std::ostream &operator<<(std::ostream &out, const person &p)
 template <typename T>
 void my_swap(T &a, T &b)
 {
-    int temp = a;
+    T temp = a;
     a = b;
     b = temp;
 }
@@ -62,8 +62,8 @@ int main()
     // func('a', 2);
     // func("hello", 2);
     // func(p1, p2);
-    int a = 10;
-    int b = 20;
+    string a = "prashant";
+    string b = "nishant";
     my_swap(a, b);
     cout << "a: " << a << " b: " << b << endl;
 
